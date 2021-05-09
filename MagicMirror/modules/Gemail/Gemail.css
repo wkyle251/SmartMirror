@@ -1,0 +1,83 @@
+.emailsmalldom {
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 172.8px;
+}
+
+#emailcontainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  height: 864px;
+}
+
+.emailcontent {
+  grid-column: span 2;
+  height: 90px;
+  padding: 0px 20px;
+  overflow: hidden;
+}
+
+#emaildom {
+  height: 870px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.emailtitle {
+  float: right;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  height: 35px;
+  text-decoration: underline;
+  width: 740px;
+  overflow: hidden;
+}
+
+.emaildate {
+  text-align: center;
+  height: 45px;
+}
+
+.emailfrom {
+  padding-left: 7px;
+  font-style: italic;
+  height: 35px;
+  color: #c2c2c2;
+}
+
+#bodydom {
+}
+
+.emailrightdom {
+  background-color: white;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid white;
+  height: 872px;
+}
+
+.remailtitle {
+  width: 700px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 800;
+  text-decoration: underline;
+  height: 70px;
+}
+
+.remailfrom {
+  font-size: 25px;
+  font-style: italic;
+  height: 40px;
+  padding-left: 6px;
+  grid-column: span 2;
+  border-bottom: 1px solid;
+}
+
+.remailbody {
+  overflow: scroll;
+  height: 694px;
+  grid-column: span 2;
+}

@@ -1,0 +1,22 @@
+#weatherRemind {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.todayAct::before {
+  content: "";
+  float: right;
+  background-color: white;
+  width: 5px;
+  height: 38px;
+  left: -7px;
+}
+
+.todayAct {
+  float: right;
+  font-size: 20px;
+  /* font-style: italic; */
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

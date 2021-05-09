@@ -1,0 +1,252 @@
+{
+  "manifest": {
+    "displayName": "Get the page",
+    "invocationName": "Get the page",
+    "category": "PRODUCTIVITY"
+  },
+  "actions": [
+    {
+      "name": "com.example.actions.GetPage",
+      "availability": {
+        "deviceClasses": [
+          {
+            "assistantSdkDevice": {}
+          }
+        ]
+      },
+      "intent": {
+        "name": "com.example.intents.GetPage",
+        "parameters": [
+          {
+            "name": "get",
+            "type": "Get"
+          }
+        ],
+        "trigger": {
+          "queryPatterns": [
+            "go to $Get:get",
+            "going to $Get:get",
+            "move to $Get:get",
+            "$Get:get",
+            "swap to $Get:get"
+          ]
+        }
+      },
+      "fulfillment": {
+        "staticFulfillment": {
+          "templatedResponse": {
+            "items": [
+              {
+                "simpleResponse": {
+                  "textToSpeech": "Going to $get page."
+                }
+              },
+              {
+                "deviceExecution": {
+                  "command": "com.example.commands.GetPage",
+                  "params": {
+                    "get": "$get"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "com.example.actions.PlayMusic",
+      "availability": {
+        "deviceClasses": [
+          {
+            "assistantSdkDevice": {}
+          }
+        ]
+      },
+      "intent": {
+        "name": "com.example.intents.PlayMusic",
+        "parameters": [
+          {
+            "name": "music",
+            "type": "Music"
+          }
+        ],
+        "trigger": {
+          "queryPatterns": [
+            "play $Music:music song",
+            "$Music:music",
+            "$Music:music song",
+            "$Music:music a song",
+            "$Music:music music",
+            "move to $Music:music song",
+            "move to $Music:music",
+            "go to $Music:music song",
+            "go to $Music:music"
+          ]
+        }
+      },
+      "fulfillment": {
+        "staticFulfillment": {
+          "templatedResponse": {
+            "items": [
+              {
+                "simpleResponse": {
+                  "textToSpeech": "OK, $music music"
+                }
+              },
+              {
+                "deviceExecution": {
+                  "command": "com.example.commands.PlayMusic",
+                  "params": {
+                    "music": "$music"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "com.example.actions.CheckEmail",
+      "availability": {
+        "deviceClasses": [
+          {
+            "assistantSdkDevice": {}
+          }
+        ]
+      },
+      "intent": {
+        "name": "com.example.intents.CheckEmail",
+        "parameters": [
+          {
+            "name": "mail",
+            "type": "Mail"
+          }
+        ],
+        "trigger": {
+          "queryPatterns": [
+            "view $Mail:mail",
+            "view $Mail:mail email",
+            "read $Mail:mail",
+            "check $Mail:mail",
+            "check my $Mail:mail",
+            "read $Mail:mail email",
+            "check $Mail:mail email",
+            "check my $Mail:mail email"
+          ]
+        }
+      },
+      "fulfillment": {
+        "staticFulfillment": {
+          "templatedResponse": {
+            "items": [
+              {
+                "simpleResponse": {
+                  "textToSpeech": "OK, checking $mail email"
+                }
+              },
+              {
+                "deviceExecution": {
+                  "command": "com.example.commands.CheckEmail",
+                  "params": {
+                    "mail": "$mail"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "$Get",
+      "entities": [
+        {
+          "key": "EMAIL",
+          "synonyms": ["email page"]
+        },
+        {
+          "key": "CALENDAR",
+          "synonyms": ["calendar page"]
+        },
+        {
+          "key": "HOME",
+          "synonyms": [
+            "homepage",
+            "main page",
+            "default page",
+            "original page",
+            "home page"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "$Music",
+      "entities": [
+        {
+          "key": "NEXT",
+          "synonyms": ["next", "next song", "skip", "pass"]
+        },
+        {
+          "key": "PREVIOUS",
+          "synonyms": ["previous"]
+        },
+        {
+          "key": "STOP",
+          "synonyms": ["pause", "pause song", "stop", "end", "drop"]
+        },
+        {
+          "key": "START",
+          "synonyms": [
+            "resume playing",
+            "resume",
+            "continue",
+            "continue playing",
+            "play",
+            "give me",
+            "give me some",
+            "start",
+            "start music"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "$Mail",
+      "entities": [
+        {
+          "key": "FIRST",
+          "synonyms": ["first", "newest", "first mail", "newest email"]
+        },
+        {
+          "key": "SECOND",
+          "synonyms": ["second", "second email"]
+        },
+        {
+          "key": "THIRD",
+          "synonyms": ["three", "three email"]
+        },
+        {
+          "key": "FOURTH",
+          "synonyms": ["four", "four email"]
+        },
+        {
+          "key": "FIFTH",
+          "synonyms": ["five", "five email"]
+        },
+        {
+          "key": "NEXTM",
+          "synonyms": ["next", "next email"]
+        },
+        {
+          "key": "PREVM",
+          "synonyms": ["previous", "previous email"]
+        }
+      ]
+    }
+  ]
+}

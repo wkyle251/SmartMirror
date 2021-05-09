@@ -1,0 +1,30 @@
+
+> magicmirror@2.13.0 start C:\Users\Jims\Desktop\Python\jimslochifung\MagicMirror
+> DISPLAY="${DISPLAY:=:0}" ./node_modules/.bin/electron js/electron.js
+
+'DISPLAY' ぃ琌ず场┪场㏑磅︽祘Α┪уΩ郎
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! magicmirror@2.13.0 start: `DISPLAY="${DISPLAY:=:0}" ./node_modules/.bin/electron js/electron.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the magicmirror@2.13.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Jims\AppData\Roaming\npm-cache\_logs\2020-11-19T14_09_55_536Z-debug.log
+
+> magicmirror@2.13.0 start C:\Users\Jims\Desktop\Python\jimslochifung\MagicMirror
+> DISPLAY="${DISPLAY:=:0}" ./node_modules/.bin/electron js/electron.js
+
+'DISPLAY' ぃ琌ず场┪场㏑磅︽祘Α┪уΩ郎
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! magicmirror@2.13.0 start: `DISPLAY="${DISPLAY:=:0}" ./node_modules/.bin/electron js/electron.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the magicmirror@2.13.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Jims\AppData\Roaming\npm-cache\_logs\2020-11-19T14_10_09_882Z-debug.log

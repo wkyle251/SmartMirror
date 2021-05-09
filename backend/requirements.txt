@@ -1,0 +1,14 @@
+flask
+flask_cors
+flask_socketio == 4.3.2
+eventlet
+requests
+dateparser
+google-api-python-client
+google-auth-httplib2
+google-auth
+google-auth-oauthlib
+pafy
+youtube-dl
+youtube-search-python
+lxml

@@ -1,0 +1,57 @@
+.hotnews_bar {
+  width: 250px;
+  margin: 25px 25px 40px 15px;
+}
+
+.result_marquee {
+  overflow: hidden;
+}
+
+#hotnewsDom {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+#hotnewsDom:hover {
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.newstitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 20px;
+  width: 230px;
+  border: none;
+  height: 60px;
+  background: none;
+  padding: 5px;
+  color: lightgrey;
+  letter-spacing: 1px;
+  resize: none;
+  animation: marquee 15s linear infinite;
+  position: relative;
+}
+
+@keyframes marquee {
+  0% {
+    top: 8em;
+  }
+  100% {
+    top: -13em;
+  }
+}
+
+.newstime {
+  font-size: 20px;
+  text-align: right;
+}
+
+.newsauthor {
+  display: block;
+  font-size: 20px;
+  text-align: right;
+}
