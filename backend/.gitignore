@@ -1,4 +1,4 @@
-backend/client_secret.json
-credential.json
+client_secret.json
+credentials.json
 token.pickle
 __pycache__
